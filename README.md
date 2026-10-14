@@ -82,6 +82,15 @@ npm run tauri build    # produce installers + portable exe in src-tauri/target/r
 
 Requirements: Node.js 18+, Rust (stable) and the Tauri 2 prerequisites for Windows.
 
+## Donations
+
+I am developing several more pieces of software that try to make everyone's
+daily life easier. Every software under development will be free. Donating is
+the real way for every coin the developer receives to be because they truly
+deserve it, given voluntarily. THANK YOU!
+
+[![ko-fi](Assets/logomarkLogo.Png)](https://ko-fi.com/friezasama) BUY ME A COFFEE
+
 ## Privacy
 
 Deamonize works **100% offline** out of the box: scanning, classification, history and reports never touch the network. External lookups (VirusTotal / web search / AI) are strictly opt-in and only run when you configure your own API keys in **Settings**, which are stored locally on your device.

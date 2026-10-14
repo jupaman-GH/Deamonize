@@ -1,0 +1,69 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "Deamonize",
+  "version": "1.0.0",
+  "identifier": "com.jupam.deamonize",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "label": "main",
+        "title": "Deamonize - Analizador de Servicios Windows",
+        "width": 1280,
+        "height": 800,
+        "minWidth": 980,
+        "minHeight": 640,
+        "center": true,
+        "visible": false,
+        "decorations": false
+      },
+      {
+        "label": "splash",
+        "url": "splash.html",
+        "title": "Deamonize",
+        "width": 480,
+        "height": 320,
+        "center": true,
+        "resizable": false,
+        "maximizable": false,
+        "minimizable": false,
+        "closable": false,
+        "decorations": false,
+        "transparent": true,
+        "shadow": false,
+        "focus": false,
+        "skipTaskbar": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "plugins": {
+    "updater": {
+      "pubkey": "dW50cnVzdGVkIGNvbW1lbnQ6IG1pbmlzaWduIHB1YmxpYyBrZXk6IDU3RTEyMkJBQzM3QjcxNzkKUldSNWNYdkR1aUxoVjVWVWxkV2ZVRjRYdDhSMkNqd1ZmalczVHI4cHNzcExNNWdOclVubVdadGsK",
+      "endpoints": [
+        "https://github.com/jupaman-GH/Deamonize/releases/latest/download/latest.json"
+      ],
+      "windows": {
+        "installMode": "passive"
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": "all",
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.icns",
+      "icons/icon.ico"
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Deamonize</title>
+    <style>
+      :root {
+        color-scheme: dark;
+      }
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        background: transparent;
+        overflow: hidden;
+      }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Segoe UI Variable", "Segoe UI", system-ui, sans-serif;
+        user-select: none;
+      }
+      .card {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 14px;
+        background:
+          radial-gradient(130% 100% at 50% 0%, #33114a 0%, #1c0730 45%, #12041e 100%);
+        border-radius: 14px;
+      }
+      .logo-wrap {
+        position: relative;
+        width: 128px;
+        height: 128px;
+        display: grid;
+        place-items: center;
+        animation: float 2.6s ease-in-out infinite;
+      }
+      /* Anillo giratorio de "escaneo" alrededor del logo */
+      .ring {
+        position: absolute;
+        inset: 0;
+        border-radius: 50%;
+        background: conic-gradient(
+          from 0deg,
+          transparent 0 62%,
+          rgba(250, 196, 86, 0.95) 80%,
+          transparent 100%
+        );
+        -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+        mask: radial-gradient(farthest-side, transparent calc(100% - 3px), #000 calc(100% - 2px));
+        animation: spin 1.1s linear infinite;
+      }
+      .logo {
+        width: 112px;
+        height: 112px;
+        object-fit: contain;
+        filter: drop-shadow(0 10px 26px rgba(250, 196, 86, 0.25));
+        animation: pulse 2.6s ease-in-out infinite;
+      }
+      h1 {
+        margin: 0;
+        font-size: 21px;
+        font-weight: 700;
+        letter-spacing: 1.4px;
+      }
+      h1 .deamon {
+        color: #a78bfa;
+      }
+      h1 .ize {
+        color: #ffffff;
+      }
+      .sub {
+        font-size: 11px;
+        font-weight: 600;
+        letter-spacing: 2.2px;
+        color: #a78bfa;
+      }
+      .bar {
+        width: 160px;
+        height: 4px;
+        margin-top: 4px;
+        border-radius: 99px;
+        background: rgba(255, 255, 255, 0.08);
+        overflow: hidden;
+      }
+      .bar i {
+        display: block;
+        height: 100%;
+        width: 38%;
+        border-radius: 99px;
+        background: linear-gradient(90deg, #8a4fd8, #f6c456);
+        animation: slide 1.1s ease-in-out infinite;
+      }
+      .ver {
+        position: absolute;
+        bottom: 10px;
+        right: 14px;
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        color: #7d6a8d;
+      }
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-5px);
+        }
+      }
+      @keyframes slide {
+        0% {
+          transform: translateX(-110%);
+        }
+        100% {
+          transform: translateX(370%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="logo-wrap">
+        <div class="ring"></div>
+        <img class="logo" src="/brand/DeamonizeLogoOnly.png" alt="" />
+      </div>
+      <h1><span class="deamon">DEAMON</span><span class="ize">IZE</span></h1>
+      <div class="sub">SCAN &middot; SECURE &middot; PROTECT</div>
+      <div class="bar"><i></i></div>
+      <div class="ver">v1.0.0</div>
+    </div>
+  </body>
+</html>

@@ -1,6 +1,6 @@
 [package]
 name = "deamonize"
-version = "1.0.0"
+version = "1.0.1"
 description = "Analizador de servicios de Windows con clasificacion de riesgo"
 authors = ["jupam"]
 edition = "2024"

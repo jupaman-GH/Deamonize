@@ -2,7 +2,7 @@ import { getVersion } from "@tauri-apps/api/app";
 import { useEffect, useState } from "react";
 
 /** Fallback used when not running inside Tauri (plain-browser dev). */
-const FALLBACK_VERSION = "1.0.0";
+const FALLBACK_VERSION = "1.0.1";
 
 let cached: string | null = null;
 

@@ -45,8 +45,8 @@
   --verdict-suspicious: oklch(0.76 0.15 60);
   --verdict-dangerous: oklch(0.66 0.19 22);
   --verdict-unknown: oklch(0.58 0.015 260);
-  /* Brand purple (wordmark DEAMON / slogan) */
-  --brand-purple: #7c3aed;
+  /* Brand wine/burgundy (wordmark DEAMON / slogan) */
+  --brand-wine: #800020;
 }
 
 .dark {
@@ -89,8 +89,8 @@
   --verdict-suspicious: oklch(0.78 0.15 60);
   --verdict-dangerous: oklch(0.68 0.19 22);
   --verdict-unknown: oklch(0.6 0.015 260);
-  /* Brand purple (wordmark DEAMON / slogan) */
-  --brand-purple: #a78bfa;
+  /* Brand wine/burgundy (wordmark DEAMON / slogan) */
+  --brand-wine: #cf5b78;
   color-scheme: dark;
 }
 
@@ -133,7 +133,7 @@
   --color-suspicious: var(--verdict-suspicious);
   --color-dangerous: var(--verdict-dangerous);
   --color-unknown: var(--verdict-unknown);
-  --color-brand: var(--brand-purple);
+  --color-brand: var(--brand-wine);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);

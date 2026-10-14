@@ -64,7 +64,7 @@ export function AppSidebar({ active, onNavigate }: AppSidebarProps) {
       <SidebarHeader>
         <div className="flex items-center gap-2 px-1 py-1.5" data-tauri-drag-region>
           <img
-            src="/brand/DeamonizeLogoOnly.png"
+            src="/brand/Logo.png"
             alt="Deamonize"
             className="size-7 shrink-0 object-contain drop-shadow-[0_0_6px_rgba(250,196,86,0.45)]"
             data-tauri-drag-region

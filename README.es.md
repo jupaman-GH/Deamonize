@@ -61,8 +61,8 @@ Los paquetes de actualización van firmados criptográficamente y la clave públ
 
 Descarga e instala el instalador desde la [última release](https://github.com/jupaman-GH/Deamonize/releases/latest):
 
-- `Deamonize_1.0.0_x64-setup.exe` — instalador NSIS (por usuario, recomendado)
-- `Deamonize_1.0.0_x64_en-US.msi` — instalador MSI (para despliegues gestionados)
+- `Deamonize_1.0.1_x64-setup.exe` — instalador NSIS (por usuario, recomendado)
+- `Deamonize_1.0.1_x64_en-US.msi` — instalador MSI (para despliegues gestionados)
 
 > Los instaladores aún no están firmados digitalmente, así que Windows SmartScreen puede mostrar una advertencia. Elige *Más información → Ejecutar de todos modos*.
 

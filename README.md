@@ -61,8 +61,8 @@ Update packages are cryptographically signed, and the public key is embedded in 
 
 Download and run the installer from the [latest release](https://github.com/jupaman-GH/Deamonize/releases/latest):
 
-- `Deamonize_1.0.0_x64-setup.exe` — NSIS installer (per-user, recommended)
-- `Deamonize_1.0.0_x64_en-US.msi` — MSI installer (for managed deployments)
+- `Deamonize_1.0.1_x64-setup.exe` — NSIS installer (per-user, recommended)
+- `Deamonize_1.0.1_x64_en-US.msi` — MSI installer (for managed deployments)
 
 > The installers are not code-signed yet, so Windows SmartScreen may show a warning. Choose *More info → Run anyway*.
 
